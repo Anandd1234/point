@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<title>anand singh</title>
+<style>
+#b
+{
+color:red;
+}
+#a
+{
+margin:20px;
+padding:150px;
+background-image:url("391-3911495_sign-up-login-transparent-login-logo-clipart.png");
+background-repeat:no-repeat;
+background:size:cover;
+ width: 100%;
+ height: 100%;
+background-size: contain;
+height:50px;
+width:25px;
+margin-left:auto;
+margin-right:auto;
+clear:both;
+border:5px solid green;
+border-radius:23px;
+}
+#d{
+color:red;
+font-size:20px;
+}
+#body
+{
+background-image:url("nature-images..jpg");
+background-repeat:no-repeat;
+background-size:cover;
+}
+</style>
+<script>
+function Anand()
+{
+var a=document.getElementById("b").value;
+var b=document.getElementById("c").value;
+if(a.length=="" || a.length>30)
+{
+alert("name is null or may be too large.....");
+}
+if(b.length==0 || b.length>10)
+{
+alert("password is null and large");
+}
+else
+{
+window.location.href = "file:///C:/Users/anand/OneDrive/Documents/newproject/onepage.html";
+}
+}
+function Akash()
+{
+document.getElementById("b").style.background="red";
+document.getElementById("b").style.color="white";
+document.getElementById("c").style.background="red";
+document.getElementById("c").style.color="white";
+document.getElementById("f").style.background="green";
+document.getElementById("f").style.color="white";
+}
+
+</script>
+</head>
+<body id="body">
+<marquee id="d"><h1> WELCOME TO   Sign Up PAGE</marquee>
+<div id="a">
+email<br>
+<input type="email" id="b" onfocus="Akash()"/><br><br>
+password<br><input type="password" id="c" onfocus="Akash()"/><br><br><br>
+<input type="submit" value="LOG IN" id="f" onfocus="Akash()" onclick="Anand()"/>
+</div>
+
+</body>
+</html>

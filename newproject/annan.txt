@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<title>anand singh</title>
+<style>
+#a
+{
+margin:20px;
+padding:150px;
+background:yellow;
+height:50px;
+width:200px;
+margin-left:auto;
+margin-right:auto;
+clear:both;
+border:5px solid green;
+border-radius:23px;
+}
+#d{
+color:red;
+}
+#body
+{
+background-image:url("main-qimg-276b03d2c9329e19cb95defcd7c81f87-c.jfif");
+
+}
+</style>
+<script>
+function Anand()
+{
+var a=document.getElementById("b").value;
+var b=document.getElementById("c").value;
+if(a.length=="" || a.length>20)
+{
+alert("name is null or may be too large.....");
+}
+if(b.length==0 || b.length>10)
+{
+alert("password is null and large");
+}
+else
+{
+alert("first page will open hello! have a nive day");
+window.location.href = "file:///C:/Users/anand/OneDrive/Documents/newproject/onepage.html";
+
+}
+function Akash()
+{
+document.getElementById("b").style.background="red";
+document.getElementById("b").style.color="white";
+document.getElementById("c").style.background="red";
+document.getElementById("c").style.color="white";
+document.getElementById("f").style.background="green";
+document.getElementById("f").style.color="white";
+}
+
+</script>
+</head>
+<body id="body">
+<marquee id="d"><h1> WELCOME TO LOGIN PAGE</marquee>
+<div id="a">
+email<br>
+<input type="email" id="b" onfocus="Akash()"/><br><br>
+password<br><input type="password" id="c" onfocus="Akash()"/><br><br><br>
+<input type="submit" value="LOG IN" id="f" onfocus="Akash()" onclick="Anand()"/>
+</div>
+
+</body>
+</html>
